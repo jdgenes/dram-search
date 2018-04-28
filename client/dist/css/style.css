@@ -1,0 +1,324 @@
+:root {
+
+--nav-bg-color: #6b6b6b;
+--main-bg-color: #f1f1f1;
+--main-bg-color-2: #fffcf8;
+--main-text-color: #000;
+--link-text-color: #eee;
+--link-text-hover: #f0fffc;
+--dram-box-color: #f5f5f5;
+--dram-box-color-2: #ffffff;
+--button-color: #d1e3ff;
+--search-color: #f9f8ee;
+--footer-color: #e9e9e9;
+--footer-bg-color: #7d7e83;
+
+}
+
+@keyframes appear {
+    
+    0% {opacity: 0; top: -12px;}
+    100% {opacity: 1; top: 0;}
+    
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform : rotate(360deg); }
+}
+
+.loader {
+    position: relative;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid whitesmoke;
+    border-right: 16px solid lightgray;
+    border-bottom: 16px solid darkgray;
+    border-left: 16px solid black;
+    border-radius: 50%;
+    margin-left: 40%;
+    width: 120px;
+    height: 120px;
+    animation: spin 500ms linear infinite;
+}
+
+.banner-row {
+    background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-79969.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 450px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+
+}
+
+@media screen and (max-height: 700px) {
+    .banner-row {
+        height: 225px;
+    }
+}
+
+.root-content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+}
+
+.margin-top {
+    margin-top: 12px;
+}
+
+.margin-bottom {
+    margin-bottom: 12px;
+}
+
+.margin-right {
+    margin-right: 12px;
+}
+
+.margin-left {
+    margin-left: 12px;
+}
+
+.page-content {
+    margin-bottom: -250;
+    background-color: var(--main-bg-color-2);
+    animation-name: appear;
+    animation-duration: 0.5s;
+    min-height: 50vh;
+}
+
+.card-container {
+    min-width: 365px;
+}
+
+@media screen and (min-width: 525px) {
+    .card-container {
+        width: 500px;
+    }
+}
+
+/* Typography */
+
+.header {
+    margin-bottom: 64px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Review search page */
+#dram-search {
+    text-align: center;
+    min-height: 36px;
+    margin-bottom: 36px;
+}
+
+#dram-search-inside {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+.search-bar {
+    background-color: var(--search-color);
+    color: var(--main-text-color);
+    margin-bottom: 12px;
+}
+
+.drop-down {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+}
+
+.review-items {
+    min-width: 440px;
+    
+}
+
+/* buttons */
+
+.review-btn {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+}
+
+.btn-bottom {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.show-more {
+    text-align: center;
+    margin-left: 50%;
+}
+
+.close-btn-top {
+    width: 100%;
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.close-btn-bottom {
+    width: 100%;
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* generated boxes */
+
+.dram-box {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 124px;
+    background-color: var(--dram-box-color);
+    padding: 12px;
+    overflow: hidden;
+    animation-name: appear;
+    animation-duration: 0.5s;
+}
+
+.dram-box:nth-child(2n+2) {
+    background-color: var(--dram-box-color-2);
+}
+
+#info-box-container {
+    -webkit-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    -moz-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    width: inherit;
+}
+
+.modal-content {
+    background-color: var(--main-bg-color);
+
+}
+
+.info-box {
+    background-color: var(--main-bg-color-2);
+    overflow: hidden;
+}
+
+.info-box-row {
+    padding: 16px;
+}
+
+.info-box-inside {
+    -webkit-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    -moz-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    margin-bottom: 16px;
+}
+
+.row {
+    margin: 0;
+}
+
+.review-row {
+    -webkit-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    -moz-box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    box-shadow: -6px 6px 22px 5px rgba(125,125,125,0.71);
+    padding: 24px;
+    background-color: var(--main-bg-color);
+    text-align: center;
+    margin-bottom: 36px;
+    margin-top: 24px;
+}
+
+.footer-row {
+    margin: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+ul {
+    background-color: var(--nav-bg-color);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}   
+
+a {
+    color: inherit;
+    font-weight: bolder;
+}
+
+.nav-bar a {
+    color: var(--link-text-color);
+}
+
+li {
+    text-align: center;
+    float: left;
+}
+
+li a {
+    color: var(--link-text-color);
+    display: block;
+    padding: 16px 24px;
+}
+
+li a:hover {
+    color: var(--link-text-hover);
+}
+
+li a:visited {
+    color: var(--link-text-color);
+}
+
+.socials a {
+    color: darkcyan;
+}
+
+.footer i {
+    font-size: 14pt;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.socials i {
+    margin-left: 16px;
+    margin-right: 16px;    
+    font-size: 24pt;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.navbar {
+    margin: 0;
+}
+
+.dram-header {
+    min-width: 275px;
+}
+
+.dram-name {
+    margin-bottom: 24px;
+}
+
+.dram-header:nth-child(1n+2) .dram-name {
+    display: none;
+}
+
+.footer {
+    position: relative;
+    min-height: 150px;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-color);
+}
+
+.margin-top-double {
+    margin-top: 48px;
+}
